@@ -1,0 +1,11 @@
+# /etc/network/interfaces -- configuration file for ifup(8), ifdown(8)
+
+# loopback 
+auto lo
+iface lo inet loopback
+
+# hardline/wifi (update address as needed)
+auto eth0
+iface eth0 inet static
+    address 10.10.10.13
+    netmask 255.255.255.0
